@@ -110,7 +110,7 @@ LoadModule authz_user_module modules/mod_authz_user.so'
 
 DavLockDB /opt/app-root/DavLock
 
-Alias /webdav/ /opt/app-root/src/
+Alias /webdav/ /opt/app-root/src/wp/
 
 <Location /webdav/>
     DAV on
