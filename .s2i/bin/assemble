@@ -42,15 +42,15 @@ fi
 
 mkdir -p /opt/app-root/s2i
 
-mv /tmp/src/wp/builder/assemble /opt/app-root/s2i/assemble
-mv /tmp/src/wp/builder/run /opt/app-root/s2i/run
-mv /tmp/src/wp/builder/save-artifacts /opt/app-root/s2i/save-artifacts
+mv /tmp/src/builder/assemble /opt/app-root/s2i/assemble
+mv /tmp/src/builder/run /opt/app-root/s2i/run
+mv /tmp/src/builder/save-artifacts /opt/app-root/s2i/save-artifacts
 
 mkdir -p /tmp/.s2i
 
-mv /tmp/src/wp/builder/image_metadata.json /tmp/.s2i/image_metadata.json
+mv /tmp/src/builder/image_metadata.json /tmp/.s2i/image_metadata.json
 
-rm -rf /tmp/src/wp
+rm -rf /tmp/src
 
 # Fixup permissions on directories and files.
 
