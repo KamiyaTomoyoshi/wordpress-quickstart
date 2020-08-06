@@ -7,7 +7,6 @@ set -eo pipefail
 # If WordPress has not been installed yet, unpack it.
 
 if [ ! -f wp-config-sample.php ]; then
-    mkdir wp
     cd wp
     tar --strip-components=1 -xzf /opt/app-root/downloads/wordpress.tar.gz
 
