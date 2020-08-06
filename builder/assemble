@@ -12,14 +12,14 @@ set -eo pipefail
 
 mkdir -p /opt/app-root/downloads
 
-mkdir -p /tmp/src/plugins
-mkdir -p /tmp/src/themes
-mkdir -p /tmp/src/languages
-mkdir -p /tmp/src/configs
+mkdir -p /tmp/src/wp/plugins
+mkdir -p /tmp/src/wp/themes
+mkdir -p /tmp/src/wp/languages
+mkdir -p /tmp/src/wp/configs
 
-mv /tmp/src/plugins /opt/app-root/downloads/plugins
-mv /tmp/src/themes /opt/app-root/downloads/themes
-mv /tmp/src/languages /opt/app-root/downloads/languages
-mv /tmp/src/configs /opt/app-root/downloads/configs
+mv /tmp/src/wp/plugins /opt/app-root/downloads/plugins
+mv /tmp/src/wp/themes /opt/app-root/downloads/themes
+mv /tmp/src/wp/languages /opt/app-root/downloads/languages
+mv /tmp/src/wp/configs /opt/app-root/downloads/configs
 
-rm -rf /tmp/src
+rm -rf /tmp/src/wp
