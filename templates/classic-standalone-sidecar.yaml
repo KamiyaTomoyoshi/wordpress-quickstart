@@ -150,7 +150,7 @@ objects:
               livenessProbe: 
                 failureThreshold: 3
                 httpGet: 
-                  path: "/wp-admin/install.php"
+                  path: "/wp/wp-admin/install.php"
                   port: 8080
                   scheme: HTTP
                   httpHeaders: 
