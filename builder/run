@@ -3,8 +3,10 @@
 set -x
 
 set -eo pipefail
+if [ ! -d wp ]; then
+    mkdir wp
+fi
 
-mkdir wp
 cd wp
 
 # If WordPress has not been installed yet, unpack it.
