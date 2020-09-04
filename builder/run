@@ -4,11 +4,11 @@ set -x
 
 set -eo pipefail
 
-if [ ! -d wp_mnt ]; then
-    mkdir wp_mnt
+if [ ! -d cms_wp ]; then
+    mkdir cms_wp
 fi
 
-cd wp_mnt
+cd cms_wp
 
 # If WordPress has not been installed yet, unpack it.
 
@@ -116,7 +116,7 @@ LoadModule authz_user_module modules/mod_authz_user.so'
 
 DavLockDB /opt/app-root/DavLock
 
-Alias /webdav/ /opt/app-root/src/wp_mnt/
+Alias /webdav/ /opt/app-root/src/cms_wp/
 
 <Location /webdav/>
     DAV on
